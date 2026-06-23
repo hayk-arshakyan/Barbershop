@@ -68,24 +68,24 @@
             </li>
         </ul>
         <ul class="flex justify-center max-lg:justify-start items-center bg-black w-max p-6 rounded-full mx-auto gap-12 max-lg:w-full overflow-x-scroll">
-            <li class="text-white text-center font-bold font-mono flex flex-col items-center max-lg:w-[200px]"><img
-                    class="h-[150px] min-w-[150px] max-lg:h-[150px] rounded-full object-cover  max-lg:w-[100px]  max-lg:h-[100px] max-sm:w-[80px] max-sm:h-[80px] "
+            <li class="text-white text-center max-sm:text-sm font-bold font-mono flex flex-col items-center max-lg:w-[200px]"><img
+                    class="h-[150px] min-w-[150px] max-lg:h-[150px] rounded-full object-cover  max-lg:w-[100px]  max-lg:h-[100px] "
                     src="https://i.pinimg.com/originals/96/5a/1a/965a1aabcf9c994ecd14090b9c4eae15.jpg" alt="">զրոյական
                 անցում</li>
-            <li class="text-white font-bold text-center font-mono  flex flex-col items-center  max-lg:w-[200px]"><img
-                    class="h-[150px] min-w-[150px] max-lg:h-[150px] rounded-full object-cover  max-lg:w-[100px]  max-lg:h-[100px] max-sm:w-[80px] max-sm:h-[80px]"
+            <li class="text-white font-bold max-sm:text-sm text-center font-mono  flex flex-col items-center  max-lg:w-[200px]"><img
+                    class="h-[150px] min-w-[150px] max-lg:h-[150px] rounded-full object-cover  max-lg:w-[100px]  max-lg:h-[100px]"
                     src="https://avatars.mds.yandex.net/i?id=338dd9bd3944a075be02c2525e5f460d2ddf4033-4434285-images-thumbs&n=13"
                     alt="">կարճ սանրվածք</li>
-            <li class="text-white font-bold text-center font-mono  flex flex-col items-center  max-lg:w-[200px]"><img
-                    class="h-[150px] min-w-[150px] max-lg:h-[150px] rounded-full object-cover  max-lg:w-[100px]  max-lg:h-[100px] max-sm:w-[80px] max-sm:h-[80px]"
+            <li class="text-white max-sm:text-sm font-bold text-center font-mono  flex flex-col items-center  max-lg:w-[200px]"><img
+                    class="h-[150px] min-w-[150px] max-lg:h-[150px] rounded-full object-cover  max-lg:w-[100px]  max-lg:h-[100px]"
                     src="https://i.pinimg.com/originals/80/61/25/80612559e5c6d5d67f02e8088116d521.png" alt="">հոսող
                 սանրվածք</li>
-            <li class="text-white font-bold text-center font-mono  flex flex-col items-center  max-lg:w-[200px]"><img
-                    class="h-[150px] min-w-[150px] max-lg:h-[150px] rounded-full object-cover  max-lg:w-[100px]  max-lg:h-[100px] max-sm:w-[80px] max-sm:h-[80px]"
+            <li class="text-white max-sm:text-sm font-bold text-center font-mono  flex flex-col items-center  max-lg:w-[200px]"><img
+                    class="h-[150px] min-w-[150px] max-lg:h-[150px] rounded-full object-cover  max-lg:w-[100px]  max-lg:h-[100px]"
                     src="https://i.pinimg.com/originals/dc/c3/10/dcc31041b87ae54beaf447a576507c3c.jpg?nii=t" alt="">հետ
                 սանրվածք</li>
-            <li class="text-white font-bold font-mono  flex flex-col items-center  max-lg:w-[200px]"><img
-                    class="h-[150px] min-w-[150px] max-lg:h-[150px] rounded-full object-cover  max-lg:w-[100px]  max-lg:h-[100px] max-sm:w-[80px] max-sm:h-[80px]"
+            <li class="text-white max-sm:text-sm font-bold font-mono  flex flex-col items-center  max-lg:w-[200px]"><img
+                    class="h-[150px] min-w-[150px] max-lg:h-[150px] rounded-full object-cover  max-lg:w-[100px]  max-lg:h-[100px]"
                     src="https://avatars.mds.yandex.net/i?id=cfc5cc48fa1914856bb9e0b1a336cfa11c936b0c-2366455-images-thumbs&n=13"
                     alt="">քրոպ սանրվածք</li>
         </ul>
@@ -192,6 +192,15 @@
             <img class="w-[500px] max-md:hidden drop-shadow-2xl drop-shadow-black" src="./form.png" alt="">
         </div>
     </main>
+
+    <script>
+    var links = document.querySelectorAll("nav ul  a");
+        links.map((e)=>{
+            e.onclick = ()=>{
+                document.querySelector("nav").classList.toggle("block")
+            }
+        })
+    </script>
 </body>
 
 </html>
